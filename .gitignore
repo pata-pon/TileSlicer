@@ -19,3 +19,6 @@ analysis/
 .idea/
 Thumbs.db
 desktop.ini
+
+# Interface art is not redistributed - obtain from the artist, see README
+Assets/Interface/

@@ -22,6 +22,9 @@ SOFTWARE.
 
 ---
 
-The art assets in Assets/ (all pixel art by Hypnobius, from the Dark Ages UI
-packs - https://hypnobius.itch.io/dark-ages-ui) are not covered by this
-license and remain the property of their authors. See README for credits.
+The interface artwork used by the app comes from the Dark Ages UI pack by
+Hypnobius (https://hypnobius.itch.io/dark-ages-ui). It is not distributed in
+this repository, is not covered by this license, and remains the property of
+its author. The bundled pixel font (Assets/monogram.ttf) is by datagoblin
+(https://datagoblin.itch.io/monogram) and released under CC0. See README for
+credits.

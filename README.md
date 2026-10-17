@@ -67,6 +67,13 @@ python TileSlicerGUI.py
 Requires Python 3.8+ with Tkinter (included in the python.org Windows
 installer).
 
+> **Note:** the interface artwork is **not** included in this repository — it
+> comes from the *Dark Ages UI* pack by Hypnobius, whose license does not allow
+> redistributing the assets. The app expects it in `Assets/Interface/`, so to
+> run from source you'll need to supply the sliced art there yourself (see
+> [Credits](#credits)), or just grab a [release build](../../releases), which
+> already bundles everything.
+
 ### Build the exe yourself
 
 ```
@@ -74,14 +81,20 @@ python -m pip install pyinstaller
 python -m PyInstaller --onefile --noconsole --name TileSlicer --icon "Assets\TileSlicer.ico" --add-data "Assets;Assets" TileSlicerGUI.py
 ```
 
+The build bundles everything in `Assets\` — including `Assets\Interface\`,
+which is not in this repo (see the note above). The app loads that art at
+startup, so populate it first.
+
 The result is `dist\TileSlicer.exe` — self-contained, writes its `Export`
 folder next to itself.
 
 ## Credits
 
-- All pixel art in `Assets/` comes from the **Dark Ages UI** pack by
+- The app's interface art comes from the **Dark Ages UI** pack by
   **Hypnobius** ([hypnobius.itch.io/dark-ages-ui](https://hypnobius.itch.io/dark-ages-ui))
   — the frames, buttons, banners and parchment the whole UI is dressed in.
+  Used under the pack's license; it is **not** redistributed in this
+  repository.
 - UI font: [monogram.ttf](https://datagoblin.itch.io/monogram) by
   **datagoblin** — the pixel font every label is drawn in.
 - Built with [Python](https://www.python.org),
@@ -92,5 +105,6 @@ folder next to itself.
 ## License
 
 The code is released under the MIT license — see [LICENSE](LICENSE).
-The art in `Assets/` is not covered by the MIT license and remains the
-property of its authors.
+The interface art the app uses (Dark Ages UI by Hypnobius) is not distributed
+in this repository and is not covered by the MIT license; it remains the
+property of its author.
