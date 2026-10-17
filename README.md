@@ -79,8 +79,9 @@ folder next to itself.
 
 ## Credits
 
-- Interface design tilesets by **Hypnobius** — the frames, buttons, banners
-  and parchment the whole UI is dressed in.
+- All pixel art in `Assets/` comes from the **Dark Ages UI** pack by
+  **Hypnobius** ([hypnobius.itch.io/dark-ages-ui](https://hypnobius.itch.io/dark-ages-ui))
+  — the frames, buttons, banners and parchment the whole UI is dressed in.
 - UI font: [monogram.ttf](https://datagoblin.itch.io/monogram) by
   **datagoblin** — the pixel font every label is drawn in.
 - Built with [Python](https://www.python.org),
