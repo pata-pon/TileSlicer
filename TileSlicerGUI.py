@@ -10,7 +10,7 @@ Main window (top to bottom):
 
 About window (opened from the About button, same 384x512 decoration):
   the app name, what it does, and the credits: Hypnobius for the
-  interface design tilesets.
+  interface design tilesets, datagoblin for the monogram.ttf pixel font.
 
 Batch window (opened from the Batch button, same 384x512 decoration):
   Slice button, 32/16 size checkboxes
@@ -263,9 +263,11 @@ B_TOAST_Y = 152
 # about window: centred lines, top to bottom
 AB_HEAD_Y = 112                      # "TileSlicer"
 AB_DESC1_Y, AB_DESC2_Y = 168, 200    # what the app does
-AB_CREDITS_Y = 280                   # "Credits"
-AB_NAME_Y = 360                      # "Hypnobius"
-AB_ROLE_Y = 396                      # "interface design tilesets"
+AB_CREDITS_Y = 264                   # "Credits"
+AB_NAME_Y = 328                      # "Hypnobius"
+AB_ROLE_Y = 364                      # "interface design tilesets"
+AB_FONT_NAME_Y = 404                 # "datagoblin"
+AB_FONT_ROLE_Y = 440                 # "monogram.ttf pixel font"
 
 SIZE_RE = re.compile(r"\s*(\d{1,4})\s*[xX]\s*(\d{1,4})\s*$")
 
@@ -1175,6 +1177,8 @@ class AboutWindow(CanvasApp):
         self.credits_head = text_image("Credits", FONT_SIZE, TEXT_GOLD)
         self.name = text_image("Hypnobius", FONT_SIZE, TEXT_WHITE)
         self.role = text_image("interface design tilesets", FONT_SIZE, TEXT_GRAY)
+        self.font_name = text_image("datagoblin", FONT_SIZE, TEXT_WHITE)
+        self.font_role = text_image("monogram.ttf pixel font", FONT_SIZE, TEXT_GRAY)
 
         self.render()
 
@@ -1208,6 +1212,8 @@ class AboutWindow(CanvasApp):
         paste_centered(img, self.credits_head, 192, AB_CREDITS_Y)
         paste_centered(img, self.name, 192, AB_NAME_Y)
         paste_centered(img, self.role, 192, AB_ROLE_Y)
+        paste_centered(img, self.font_name, 192, AB_FONT_NAME_Y)
+        paste_centered(img, self.font_role, 192, AB_FONT_ROLE_Y)
         return img
 
     # ------------------------------------------------------------- events --

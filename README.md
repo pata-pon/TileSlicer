@@ -81,6 +81,8 @@ folder next to itself.
 
 - Interface design tilesets by **Hypnobius** — the frames, buttons, banners
   and parchment the whole UI is dressed in.
+- UI font: [monogram.ttf](https://datagoblin.itch.io/monogram) by
+  **datagoblin** — the pixel font every label is drawn in.
 - Built with [Python](https://www.python.org),
   [Tkinter](https://docs.python.org/3/library/tkinter.html) and
   [Pillow](https://python-pillow.org).
