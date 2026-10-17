@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512"
+     viewBox="0 0 32 32"
+     shape-rendering="crispEdges">
+
+  <!-- 3x3 grid of 7x7 chunks with 1px gutters -->
+  <rect x="4"  y="5"  width="7" height="7" fill="#FF5A5F"/>
+  <rect x="12" y="5"  width="7" height="7" fill="#FFC93C"/>
+  <rect x="4"  y="13" width="7" height="7" fill="#3D8BFF"/>
+  <rect x="12" y="13" width="7" height="7" fill="#F472B6"/>
+  <rect x="20" y="13" width="7" height="7" fill="#FF8A3D"/>
+  <rect x="4"  y="21" width="7" height="7" fill="#14B8A6"/>
+  <rect x="12" y="21" width="7" height="7" fill="#A3E635"/>
+  <rect x="20" y="21" width="7" height="7" fill="#A855F7"/>
+
+  <!-- the sliced chunk, pulled out diagonally -->
+  <rect x="22" y="3"  width="7" height="7" fill="#4ADE80"/>
+</svg>
