@@ -100,7 +100,7 @@ folder next to itself.
 - Built with [Python](https://www.python.org),
   [Tkinter](https://docs.python.org/3/library/tkinter.html) and
   [Pillow](https://python-pillow.org).
-- App icon: `Assets/TileSlicer.svg`.
+
 
 ## License
 
